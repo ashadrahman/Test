@@ -18,9 +18,6 @@ jobs:
       - name: Build
         run: |-
           yarn build
-      - name: run tests
-        run: |-
-          yarn test
   sonarcloud:
     needs: [build-and-test]
     runs-on: ubuntu-latest
